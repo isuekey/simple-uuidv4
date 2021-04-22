@@ -1,11 +1,12 @@
 
 const hexArray = Object.freeze(new Array(256).fill(0).map((ele, idx) => {
-  return idx.toString(16).padLeft(2, '0').toLowerCase();
+  return idx.toString(16).padStart(2, '0').toLowerCase();
 }));
 
 const randomIndex = () => {
   return Math.floor(Math.random() * 256);
 };
+
 const randomHex = (size=0) => {
   return new Array(size).fill(0).map(ele => {
     return hexArray[randomIndex()];
@@ -27,11 +28,13 @@ const simpleUUId = {
   randomHex,
   uuid
 };
+
 export default simpleUUId;
 
 export {
   hexArray,
   randomHex,
   uuid,
+  randomIndex,
 };
 
