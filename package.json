@@ -1,6 +1,6 @@
 {
   "name": "simple-uuidv4",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "参考uuid的方法仅创建uuidv4",
   "main": "dist/simple-uuidv4.umd.js",
   "module": "dist/simple-uuidv4.esm.js",
@@ -12,9 +12,9 @@
   "private": false,
   "scripts": {
     "test": "mocha",
-    "build:umd":"rollup --config build/rollup.config.js --format umd --file dist/simple-uuidv4.umd.js",
-    "build:esm":"rollup --config build/rollup.config.js --format esm --file dist/simple-uuidv4.esm.js",
-    "build:unpkg":"rollup --config build/rollup.config.js --format iife --file dist/simple-uuidv4.min.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/simple-uuidv4.umd.js",
+    "build:esm": "rollup --config build/rollup.config.js --format esm --file dist/simple-uuidv4.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/simple-uuidv4.min.js",
     "build": "yarn build:umd; yarn build:esm; yarn build:unpkg"
   },
   "devDependencies": {
