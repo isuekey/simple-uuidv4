@@ -1,6 +1,6 @@
 {
   "name": "simple-uuidv4",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "参考uuid的方法仅创建uuidv4",
   "main": "dist/simple-uuidv4.umd.js",
   "module": "dist/simple-uuidv4.esm.js",
